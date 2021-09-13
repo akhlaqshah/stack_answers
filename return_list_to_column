@@ -1,0 +1,40 @@
+List<Widget> _unitsProgress(units) {
+    return units
+        .map<Widget>((unit) => Padding(
+              padding: EdgeInsets.only(top: 60.0, right: 30.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 100,
+                    child: Center(
+                      child: Text(
+                        "ajksajknsa",
+                      ),
+                    ),
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 4.0),
+                        child: Text(
+                          'a (alif)',
+                          style: TextStyle(color: Colors.white, fontSize: 14),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(bottom: 4.0),
+                        child: Container(
+                          width: 150,
+                          height: 8.0,
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ))
+        .toList();
+  }
